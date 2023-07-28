@@ -11,7 +11,7 @@ int main(void)
     }
     else if (M >= 45)
     {
-        M = -45;
+        M -= 45;
     }
     if (H == -1)
     {
