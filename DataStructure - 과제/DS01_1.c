@@ -16,12 +16,16 @@ int main(void)
 	while (fscanf(fp, "%d", &n) != EOF)
 	{
 		if (min > n)
-        {min = n;} else if (n > max)
+        {
+		min = n;
+		} else if (n > max){
 			max = n;
+		}
+			
 	}
 
-	printf("MIN: %d\n", min);
-	printf("MAX: %d", max);
+	printf("Min: %d\n", min);
+	printf("Max: %d", max);
 	fclose(fp);
 
     return 0;
